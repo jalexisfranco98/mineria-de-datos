@@ -50,8 +50,8 @@ def scatter_group_by(
     file_path: str, df: pd.DataFrame, x_column: str, y_column: str, label_column: str
 ):
     fig, ax = plt.subplots()
-    labels = df[label_column].unique() if label_column in df.columns else [] # Check if label_column exists
-    cmap = plt.cm.get_cmap("hsv", len(labels) + 1) if labels else None # Get cmap if labels exist
+    labels = df[label_column].unique() if label_column in df.columns else [] 
+    cmap = plt.cm.get_cmap("hsv", len(labels) + 1) if labels else None
     for i, label in enumerate(labels):
         filter_df = df[df[label_column] == label]
         ax.scatter(filter_df[x_column], filter_df[y_column], label=label, color=cmap(i))

@@ -1,0 +1,418 @@
+1.1.- INTRODUCCIÓN 
+El cerebro humano es el sistema de cálculo más complejo que conoce el hombre. El 
+ordenador y el hombre realizan bien diferentes clases de tareas; así la operación de 
+reconocer el rostro de una persona resulta una tarea relativamente sencilla para el 
+hombre y difícil para el ordenador, mientras que la contabilidad de una empresa es tarea 
+costosa para un experto contable y una sencilla rutina para un ordenador básico. 
+La capacidad del cerebro humano de pensar, recordar y resolver problemas ha inspirado 
+a muchos científicos intentar o procurar modelar en el ordenador el funcionamiento del 
+cerebro humano. 
+Los profesionales de diferentes campos como la ingeniería, filosofía, fisiología y 
+psicología han unido sus esfuerzos debido al potencial que ofrece esta tecnología y 
+están encontrando diferentes aplicaciones en sus respectivas profesiones. 
+Un grupo de investigadores ha perseguido la creación de un modelo en el ordenador que 
+iguale o adopte las distintas funciones básicas del cerebro. El resultado ha sido una 
+nueva tecnología llamada Computación Neuronal o también Redes Neuronales 
+Artificiales. 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 1 
+Tema 1.- Introducción a la Computación Neuronal 
+El resurgimiento del interés en esta nueva forma de realizar los cálculos tras dos 
+décadas de olvido se debe al extraordinario avance y éxito tanto en el aspecto teórico 
+como de aplicación que se está obteniendo estos últimos años. 
+ 
+ 
+1.2.- CARACTERÍSTICAS DE LAS REDES NEURONALES 
+ARTIFICIALES 
+Las Redes Neuronales Artificiales, ANN (Artificial Neural Networks) están inspiradas 
+en las redes neuronales biológicas del cerebro humano. Están constituidas por 
+elementos que se comportan de forma similar a la neurona biológica en sus funciones 
+más comunes. Estos elementos están organizados de una forma parecida a la que 
+presenta el cerebro humano. 
+Las ANN al margen de "parecerse" al cerebro presentan una serie de características 
+propias del cerebro. Por ejemplo las ANN aprenden de la experiencia, generalizan de 
+ejemplos previos a ejemplos nuevos y abstraen las características principales de una 
+serie de datos. 
+ Aprender: adquirir el conocimiento de una cosa por medio del estudio, ejercicio 
+o experiencia. Las ANN pueden cambiar su comportamiento en función del entorno. Se 
+les muestra un conjunto de entradas y ellas mismas se ajustan para producir unas salidas 
+consistentes. 
+ Generalizar: extender o ampliar una cosa. Las ANN generalizan 
+automáticamente debido a su propia estructura y naturaleza. Estas redes pueden ofrecer, 
+dentro de un margen, respuestas correctas a entradas que presentan pequeñas 
+variaciones debido a los efectos de ruido o distorsión. 
+ Abstraer: aislar mentalmente o considerar por separado las cualidades de un 
+objeto. Algunas ANN son capaces de abstraer la esencia de un conjunto de entradas que 
+aparentemente no presentan aspectos comunes o relativos. 
+ 
+1.3.- ESTRUCTURA BÁSICA DE UNA RED NEURONAL 
+ 
+Analogía con el cerebro.- 
+La neurona es la unidad fundamental del sistema nervioso y en particular del cerebro. 
+Cada neurona es una simple unidad procesadora que recibe y combina señales desde y 
+hacia otras neuronas. Si la combinación de entradas es suficientemente fuerte la salida 
+de la neurona se activa. La Figura (1.1) muestra las partes que constituyen una neurona. 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 2 
+Tema 1.- Introducción a la Computación Neuronal 
+Figura (1.1) - Componentes de una Neurona.
+El cerebro consiste en uno o varios billones de neuronas densamente interconectadas. 
+El axón (salida) de la neurona se ramifica y está conectada a las dendritas (entradas) de 
+otras neuronas a través de uniones llamadas sinapsis. La eficacia de la sinpasis es 
+modificable durante el proceso de aprendizaje de la red. 
+Redes Neuronales Artificiales.- 
+En las Redes Neuronales Artificiales, ANN, la unidad análoga a la neurona biológica es 
+el elemento procesador,PE (process element). Un elemento procesador tiene varias 
+entradas y las combina, normalmente con una suma básica. La suma de las entradas es 
+modificada por una función de transferencia y el valor de la salida de esta función de 
+transferencia se pasa directamente a la salida del elemento procesador. 
+La salida del PE se puede conectar a las entradas de otras neuronas artificiales (PE) 
+mediante conexiones ponderadas correspondientes a la eficacia de la sinapsis de las 
+conexiones neuronales. 
+La Figura (1.2) representa un elemento procesador de una red neuronal artificial 
+implementada en un ordenador. 
+Figura (1.2) - Diagrama de una Neurona Artificial (PE).
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 3 
+Tema 1.- Introducción a la Computación Neuronal 
+Una red neuronal consiste en un conjunto de unidades elementales PE conectadas de 
+una forma concreta. El interés de las ANN no reside sólamente en el modelo del 
+elemento PE sino en las formas en que se conectan estos elementos procesadores. 
+Generalmente los elementos PE están organizados en grupos llamados niveles o capas. 
+Una red típica consiste en una secuencia de capas con conexiones entre capas 
+adyacentes consecutivas. 
+Existen dos capas con conexiones con el mundo exterior. Una capa de entrada, buffer de 
+entrada, donde se presentan los datos a la red, y una capa buffer de salida que mantiene 
+la respuesta de la red a una entrada. El resto de las capas reciben el nombre de capas 
+ocultas. La Figura (1.3) muestra el aspecto de una Red Neuronal Artificial. 
+Figura (1.3) - Arquitectura de una Red Neuronal Simple. 
+1.4.- COMPUTACIÓN TRADICIONAL Y COMPUTACIÓN 
+NEURONAL 
+ 
+Programación/Entrenamiento.- 
+Las técnicas tradicionales de programación utilizadas para la solución de un problema 
+requieren la creación de un algoritmo. Un algoritmo consiste en una secuencia de 
+instrucciones que indica el modo en el que debe proceder el sistema basado en un 
+ordenador para lograr el fin perseguido que es la resolución del problema. 
+El diseño de una secuencia de instrucciones para resolver un problema de contabilidad 
+es relativamente sencillo, mientras que existen muchos problemas del mundo real en los 
+que resulta difícil realizar un algoritmo que resuelva dichos problemas. Por ejemplo 
+imaginemos desarrollar un programa para cualquiera de los problemas de 
+reconocimiento de imágenes como el rostro de una persona. Hay muchas variaciones de 
+la imagen de una persona, como que presente un rostro serio o un rostro alegre, 
+variaciones en general que deben tenerse en cuenta a la hora de diseñar el algoritmo. 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 4 
+Tema 1.- Introducción a la Computación Neuronal 
+Las ANN, a diferencia de los algoritmos que son instrucciones previamente 
+programadas, deben ser previamente entrenadas. Esto significa que a la red se le 
+muestra en su capa de entrada unos ejemplos y ella misma se ajusta en función de 
+alguna regla de aprendizaje. 
+Arquitectura.- 
+Las ANN presentan una arquitectura totalmente diferente de los ordenadores 
+tradicionales de un único procesador. Las máquinas tradicionales basadas en el modelo 
+de Von Neuman tienen un único elemento procesador, la CPU (Control Process Unit) 
+que realiza todos los cálculos ejecutando todas las instrucciones de la secuencia 
+programada en el algoritmo. Cualquier CPU realiza más de cien comandos básicos, 
+incluyendo sumas, restas, y desplazamientos entre otros. 
+Los comandos o instrucciones se ejecutan secuencialmente y sincronizadas con el reloj 
+del sistema. Sin embargo en los sistemas de computación neuronal cada elemento PE 
+sólo puede realizar uno, o como mucho, varios cálculos. La potencia del procesado de 
+las ANN se mide principalmente por el número de interconexiones actualizadas por 
+segundo durante el proceso de entrenamiento o aprendizaje. Sin embargo las máquinas 
+de Von Neuman se miden por el número de instrucciones que ejecuta por segundo el 
+procesador central CPU. 
+La arquitectura de las ANN parte de la organización de los sistemas de procesado en 
+paralelo, es decir, sistemas en los que distintos procesadores están interconectados. No 
+obstante los procesadores son unidades procesadoras simples, diseñadas para la suma de 
+muchas entradas y con un ajuste automático de las conexiones ponderadas. 
+ 
+Sistemas Expertos.- 
+Los sistemas expertos difieren de la programación tradicional en que la base del 
+conocimiento está separada del motor de inferencia (el método del procesado del 
+conocimiento). Esta característica permite que todo el conocimiento adicional puede ser 
+añadido al sistema sin necesidad de tener que ser reprogramado todo el sistema. Esta 
+técnica requiere que exista una persona experta en un área y que se puedan crear reglas 
+que codifiquen el conocimiento. 
+En el desarrollo de una red neuronal no hay que programar ni el conocimiento ni las 
+reglas del procesamiento del conocimiento. La red neuronal aprende las reglas del 
+procesamiento del conocimiento mediante el ajuste de las conexiones ponderadas entre 
+las neuronas de distintas capas de la red. 
+Mientras que en los Sistemas Expertos el conocimiento se hace explícito en forma de 
+reglas, en la computación neuronal las ANN generan sus propias reglas aprendiendo de 
+los ejemplos que se les muestran en la fase de entrenamiento. El aprendizaje se consigue 
+a través de una regla de aprendizaje que adapta o cambia los pesos de las conexiones en 
+respuesta a los ejemplos de entrada, y opcionalmente también en respuesta a las salidas 
+deseadas. Esta característica de las ANN es lo que permite decir que las redes 
+neuronales aprenden de la experiencia. 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 5 
+Tema 1.- Introducción a la Computación Neuronal 
+Una característica importante de las ANN es la forma o el modo en que se almacena la 
+información. La memoria o el conocimiento de estas redes está distribuida a lo largo de 
+todas las conexiones ponderadas de la red. 
+Algunas ANN presentan la característica de ser "asociativas" que significa que para una 
+entrada parcial la red elegirá la entrada más parecida en memoria y generará una salida 
+que corresponda a la entrada completa. 
+La naturaleza de la memoria de las ANN permite que la red responda adecuadamente 
+cuando se le presenta una entrada incompleta o con ruido. Esta propiedad suele ser 
+referida como la capacidad de "generalización". 
+Otra característica de las ANN es la tolerancia a la falta (Fault Tolerance). Tolerancia a 
+la falta se refiere al hecho de que en muchas ANN si resultaran destruidos varios 
+elementos procesadores PE, o se alteraran las conexiones el comportamiento de la red 
+sería mínimamente modificado. El comportamiento varía pero el sistema no se 
+descompone o deja de funcionar. 
+Esta característica se debe a que las ANN tienen la información distribuida a lo largo de 
+toda la red y no está contenida en un único lugar. 
+ 
+1.5.- HISTORIA DE LA COMPUTACIÓN NEURONAL 
+En 1943, el neurobiólogo Warren McCulloch, y el estadístico Walter Pitss, publicaron 
+el artículo "A logical calculus of Ideas Imminent in Nervous Activity". Este artículo 
+constituyó la base y el inicio del desarrollo en diferentes campos como son los 
+Ordenadores Digitales (John Von Neuman), la Inteligencia Artificial (Marvin Minsky 
+con los Sistemas Expertos) y el funcionamieto del ojo (Frank Rosenblatt con la famosa 
+red llamada Perceptron). 
+En 1956, los pioneros de la Inteligencia Artificial, Minsky, McCarthy, Rochester, 
+Shanon, organizaron la primera conferencia de Inteligencia Artificial que fue 
+patrocinada por la Fundación Rochester. Esta conferencia se celebró en el verano de 
+1956 en la localidad inglesa de Darmouth y en muchos libros se hace referencia al 
+verano de este año como la primera toma de contacto seria con las redes neuronales 
+artificiales. 
+Nathaural Rochester del equipo de investigación de IBM presentó el modelo de una red 
+neuronal que él mismo realizó y puede considerarse como el primer software de 
+simulación de redes neuronales artificiales. 
+En 1957, Frank Rosenblatt publicó el mayor trabajo de investigación en computación 
+neuronal realizado hasta esas fechas. Su trabajo consistía en el desarrollo de un 
+elemento llamado "Perceptron". 
+El perceptron es un sistema clasificador de patrones que puede identificar patrones 
+geométricos y abstractos. El primer perceptron era capaz de aprender algo y era robusto, 
+de forma que su comportamiento variaba sólo si resultaban dañados los componentes 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 6 
+Tema 1.- Introducción a la Computación Neuronal 
+del sistema. Además presentaba la característica de ser flexible y comportarse 
+correctamente después de que algunas celdas fueran destruidas. 
+El perceptron fue originalmente diseñado para el reconocimiento óptico de patrones. 
+Una rejilla de 400 fotocélulas, correspondientes a las neuronas de la retina sensibles a la 
+luz, recibe el estímulo óptico. Estas fotocélulas están conectadas a elementos 
+asociativos que recogen los impulsos eléctricos emitidos desde las fotocélulas. Las 
+conexiones entre los elementos asociativos y las fotocélulas se realizan de forma 
+aleatoria. 
+Si las células presentan un valor de entrada superior a un umbral predeterminado 
+entonces el elemento asociativo produce una salida. La Figura (1.4) presenta la 
+estructura de la red perceptron. 
+Figura (1.4) - Aplicación de la Red Perceptron.
+ 
+ El perceptron presenta algunas limitaciones debido a que se trataba de un dispositivo en 
+desarrollo. La mayor limitación la reflejaron Minsky y Papert años más tarde, y ponían 
+de manifiesto la incapacidad del perceptron en resolver algunas tareas o problemas 
+sencillos como por ejemplo la función lógica OR exclusivo. 
+Uno de los mayores cambios realizados en el perceptron de Rossenblatt a lo largo de la 
+década de los 60 ha sido el desarrollo de sistemas multicapa que pueden aprender y 
+categorizar datos complejos. 
+En 1959, Bernard Widrow en Stanford desarrolló un elemento adaptativo lineal llamado 
+"Adaline" (Adaptive Linear Neuron). La Adaline y una versión de dos capas, llamada 
+"Madaline", fueron utilizadas en distintas aplicaciones como reconocimiento de voz y 
+caracteres, predicción del tiempo, control adaptativo y sobre todo en el desarrollo de 
+filtros adaptativos que eliminen los ecos de las líneas telefónicas. 
+A mediados de los años 60, Minsky y Papert pertenecientes al Laboratorio de 
+Investigación de Electrónica del MIT (Massachussets Institute Technology) comenzaron 
+un trabajo profundo de crítica al perceptron. El resultado de este trabajo, el libro 
+Perceptrons, era un análisis matemático del concepto del perceptron. La conclusión de 
+este trabajo, que se transmitió a la comunidad científica del mundo entero, es que el 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 7 
+Tema 1.- Introducción a la Computación Neuronal 
+Perceptron y la Computación Neuronal no eran temas interesantes que estudiar y 
+desarrollar. A partir de este momento descendieron drásticamente las inversiones en la 
+investigación de la computación neuronal. 
+Uno de los pocos investigadores que continuaron con su trabajo en la computación 
+neuronal tras la publicación del libro Perceptrons fue James Anderson. Su trabajo se 
+basó en el desarrollo de un modelo lineal que consiste en un modelo asociativo 
+distribuido basado en el principio de Hebb (las conexiones son reforzadas cada vez que 
+son activadas las neuronas). Una versión extendida de este modelo lineal es el llamado 
+modelo Brain-State-in- a Box (BSB). 
+Teuvo Kohonen, de la Universidad de Helsinki, es uno de los mayores impulsores de la 
+computación neuronal de la década de los 70. De su trabajo de investigación destacan 
+dos aportaciones: la primera es la descripción y análisis de una clase grande de reglas 
+adaptativas, reglas en las que las conexiones ponderadas se modifican de una forma 
+dependiente de los valores anteriores y posteriores de las sinapsis. Y la segunda 
+aportación es el principio de aprendizaje competitivo en el que los elementos compiten 
+por responder a un estímulo de entrada, y el ganador se adapta él mismo para responder 
+con mayor efecto al estímulo. 
+Otro investigador que continuó con su trabajo de investigación en el mundo de la 
+computación neuronal a pesar del mal presagio que indicaron Minsky y Papert fue 
+Stephen Grossberg. Grossberg estaba especialmente interesado en la utilización de datos 
+de la neurología para construir modelos de computación neuronal. La mayoría de sus 
+reglas y postulados derivaron de estudios fisiológicos. Su trabajo ha constituido un gran 
+impulso en la investigación del diseño y construcción de modelos neuronales. Una de 
+estas clases de redes es la Adaptive Resonance Theory (ART). 
+En 1982 John Hopfield con la publicación del artículo Hopfield Model o Crossbar 
+Associative Network, junto con la invención del algoritmo Backpropagation se 
+consiguió devolver el interés y la confianza en el fascinante campo de la computación 
+neuronal tras dos décadas de casi absoluta inactividad y desinterés. 
+Hopfield presenta un sistema de computación neuronal consistente en elementos 
+procesadores interconectados que buscan y tienden a un mínimo de energía. Esta red 
+con este tipo de función de energía y mecanismo de respuesta no es mas que un caso de 
+la clase genérica de redes que consideró Grossberg. 
+Investigación de hoy en día.- 
+Existen muchos grupos con sede en diferentes universidades de todo el mundo que están 
+realizando trabajos de investigación en el área de las redes neuronales artificiales. Cada 
+grupo tiene diferente énfasis y motivación con los neurólogos, psicólogos del 
+conocimiento, físicos, programadores y matemáticos. Todos ellos ofrecen nuevos 
+puntos de vista e intuiciones en esta área de la técnica. 
+Grossberg continua trabajando en compañía de Carpenter en la Universidad de Boston, 
+mientras Teuvo Kohonen está en la Universidad de Helsinki. Uno de los mayores 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 8 
+Tema 1.- Introducción a la Computación Neuronal 
+grupos de investigación de los últimos años ha sido el grupo PDP (Parallel Distributed 
+Processing) formado por Rumelhart, McClelland y Hinton. 
+Rumelhart de la Universidad de Stanford es uno de los principales impulsores de la red 
+más utilizada en la mayoría de las aplicaciones actuales, la famosa red neuronal 
+Backpropagation. En la Universidad de Carnegie-Mellon, el grupo de investigación a la 
+cabeza con McClelland destaca por el estudio de las posibles aplicaciones de la 
+Backpropagation. Y en la Universidad de Toronto, Hinton y Sejnowski han desarrollado 
+una máquina llamada Boltzman que consiste en la red de Hopfield con dos 
+modificaciones significativas. 
+Bart Kosko ha diseñado una red llamada BAM (Bidirectional Associate Memory) 
+basado en la red de Grossberg. Por último indicar la existencia de grandes grupos de 
+investigación como los de California Institute of Technology, Massachussets Institute of 
+Technology, University of California Berkeley y University of California San Diego. 
+Conviene no olvidar el esfuerzo económico y técnico que están realizando las empresas 
+privadas tanto en USA como en Japón y en la Comunidad Económica Europea. Como 
+botón de muestra de las inversiones en estos países baste conocer que sólo en USA se 
+gasta más de 100 millones de dólares al año. 
+ 
+1.6.- APLICACIONES DE LAS REDES NEURONALES 
+ARTIFICIALES 
+Las características especiales de los sistemas de computación neuronal permiten que sea 
+utilizada esta nueva técnica de cálculo en una extensa variedad de aplicaciones. 
+La computación neuronal provee un acercamiento mayor al reconocimiento y 
+percepción humana que los métodos tradicionales de cálculo. Las redes neuronales 
+artificiales presentan resultados razonables en aplicaciones donde las entradas presentan 
+ruido o las entradas están incompletas. Algunas de las áreas de aplicación de las ANN 
+son las siguientes: 
+ Análisis y Procesado de señales Reconocimiento de Imágenes 
+ Control de Procesos Filtrado de ruido 
+ Robótica Procesado del Lenguaje 
+ Diagnósticos médicos Otros 
+ Conversión Texto a Voz: uno de los principales promotores de la computación 
+neuronal en esta área es Terrence Sejnowski. La conversión texto-voz consiste en 
+cambiar los símbolos gráficos de un texto en lenguaje hablado. El sistema de 
+computación neuronal presentado por Sejnowski y Rosemberg, el sistema llamado 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 9 
+Tema 1.- Introducción a la Computación Neuronal 
+NetTalk, convierte texto en fonemas y con la ayuda de un sintetizador de voz (Dectalk) 
+genera voz a partir de un texto escrito. 
+La ventaja que ofrece la computación neuronal frente a las tecnologías tradicionales en 
+la conversión texto-voz es la propiedad de eliminar la necesidad de programar un 
+complejo conjunto de reglas de pronunciación en el ordenador. A pesar de que el 
+sistema NetTalk ofrece un buen comportamiento, la computación neuronal para este 
+tipo de aplicación abre posibilidades de investigación y expectativas de desarrollo 
+comercial. 
+ 
+ Procesado Natural del Lenguaje: incluye el estudio de cómo se construyen las 
+reglas del lenguaje. Los científicos del conocimiento Rumelhart y McClelland han 
+integrado una red neuronal de proceso natural del lenguaje. El sistema realizado ha 
+aprendido el tiempo verbal pass tense de los verbos en Inglés. Las características 
+propias de la computación neuronal como la capacidad de generalizar a partir de datos 
+incompletos y la capacidad de abstraer, permiten al sistema generar buenos pronósticos 
+para verbos nuevos o verbos desconocidos. 
+ Compresión de Imágenes: la compresión de imágenes es la transformación de 
+los datos de una imagen a una representación diferente que requiera menos memoria o 
+que se pueda reconstruir una imagen imperceptible. Cottrel, Munro y Zisper de la 
+Universidad de San Diego y Pisttburgh han diseñado un sistema de compresión de 
+imágenes utilizando una red neuronal con un factor de compresión de 8:1. 
+ 
+ Reconocimiento de Caracteres: es el proceso de interpretación visual y de 
+clasificación de símbolos. Los investigadores de Nestor, Inc. han desarrollado un 
+sistema de computación neuronal que tras el entrenamiento con un conjunto de tipos de 
+caracteres de letras, es capaz de interpretar un tipo de carácter o letra que no haya visto 
+con anterioridad. 
+ Reconocimiento de Patrones en Imágenes: una aplicación típica es la 
+clasificación de objetivos detectados por un sonar. Existen varias ANN basadas en la 
+popular Backpropagation cuyo comportamiento es comparable con el de los operadores 
+humanos. Otra aplicación normal es la inspección industrial. 
+ Problemas de Combinatoria: en este tipo de problemas la solución mediante 
+cálculo tradicional requiere un tiempo de proceso (CPU) que es exponencial con el 
+número de entradas. Un ejemplo es el problema del vendedor; el objetivo es elegir el 
+camino más corto posible que debe realizar el vendedor para cubrir un número limitado 
+de ciudades en una área geográfica específica. Este tipo de problema ha sido abordado 
+con éxito por Hopfield y el resultado de su trabajo ha sido el desarrollo de una ANN que 
+ofrece buenos resultados para este problema de combinatoria. 
+ 
+ Procesado de la Señal: en este tipo de aplicación existen tres clases diferentes 
+de procesado de la señal que han sido objeto de las ANN como son la predicción, el 
+modelado de un sistema y el filtrado de ruido. 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 10 
+Tema 1.- Introducción a la Computación Neuronal 
+ Predicción: en el mundo real existen muchos fenómenos de los que conocemos 
+su comportamiento a través de una serie temporal de datos o valores. Lapedes y Farber 
+del Laboratorio de Investigación de los Álamos, han demostrado que la red 
+backpropagation supera en un orden de magnitud a los métodos de predicción 
+polinómicos y lineales convencionales para las series temporales caóticas. 
+ 
+ Modelado de Sistemas: los sistemas lineales son caracterizados por la función 
+de transferencia que no es más que una expresión analítica entre la variable de salida y 
+una variable independiente y sus derivadas. Las ANN también son capaces de aprender 
+una función de transferencia y comportarse correctamente como el sistema lineal que 
+está modelando. 
+ Filtro de Ruido: las ANN también pueden ser utilizadas para eliminar el ruido 
+de una señal. Estas redes son capaces de mantener en un alto grado las estructuras y 
+valores de los filtros tradicionales. 
+ Modelos Económicos y Financieros: una de las aplicaciones más importantes 
+del modelado y pronóstico es la creación de pronósticos económicos como por ejemplo 
+los precios de existencias, la producción de las cosechas, el interés de las cuentas, el 
+volumen de las ventas etc. Las redes neuronales están ofreciendo mejores resultados en 
+los pronósticos financieros que los métodos convencionales. 
+ 
+ ServoControl: un problema difícil en el control de un complejo sistema de 
+servomecanismo es encontrar un método de cálculo computacional aceptable para 
+compensar las variaciones físicas que se producen en el sistema. Entre los 
+inconvenientes destaca la imposibilidad en algunos casos de medir con exactitud las 
+variaciones producidas y el excesivo tiempo de cálculo requerido para la obtención de la 
+solución matemática. Existen diferentes redes neuronales que han sido entrenadas para 
+reproducir o predecir el error que se produce en la posición final de un robot. Este error 
+se combina con la posición deseada para proveer una posición adaptativa de corrección 
+y mejorar la exactitud de la posición final. 
+ 
+1.7.- IMPLEMENTACIÓN Y TECNOLOGÍAS EMERGENTES 
+El resurgimiento de la computación neuronal en los últimos años se ha producido por el 
+desarrollo teórico de nuevos modelos matemáticos del comportamiento del cerebro y 
+por el desarrollo de nuevas tecnologías que ya están siendo utilizadas en una gran 
+variedad de aplicaciones comerciales. 
+Entre los avances o desarrollos tecnológicos que permiten la realización de la 
+computación neuronal destacan los programas software de simulación, los aceleradores 
+hardware, los chips de silicio y los procesadores ópticos. 
+ Simuladores Software: constituyen una de las formas más versátiles con las que 
+se pueden implementar redes neuronales. Estos programas constituyen todo un sistema 
+de desarrollo y realización de prototipos de redes neuronales. Estos programas se 
+Curso: Redes Neuronales Artificiales y sus Aplicaciones © Xabier Basogain Olabe 11 
+Tema 1.- Introducción a la Computación Neuronal 
+utilizan para diseñar, construir, entrenar y probar redes neuronales artificiales para 
+resolver problemas complejos y problemas del mundo real. 
+Los primeros simuladores software se ejecutaban en ordenadores de grandes 
+prestaciones y el avance de los ordenadores personales en capacidad de procesado y 
+capacidad de memoria hace posible que exista una serie de simuladores software de 
+grandes prestaciones que corren sobre ordenadores personales. Entre otros paquetes 
+software se incluye Neural Works, Neuralyst, Explore Net y Kwowledge Net. 
+ 
+ Aceleradores Hardware: la naturaleza paralela de la computación neuronal se 
+presta a realizar diseños concretos y a medida de dispositivos físicos, aceleradores 
+hardware, que aceleren la ejecución de los cálculos. Los aceleradores hardware para los 
+sistemas de computación neuronal son dispositivos físicos constituidos por diferentes 
+procesadores interconectados que ayudan a la realización y ejecución del 
+comportamiento de las ANN. Una de las ventajas de los aceleradores hardware 
+diseñados específicamente para la computación neuronal es el aumento de la velocidad 
+de procesado. Esta característica permite la utilización de las ANN en aplicaciones de 
+tiempo real. 
+Robert Hecht-Nielsen desarrolló el acelerador hardware Mark III que constaba de 8100 
+procesadores y trabajaba como un periférico de un VAX. La mayoría de las casas 
+comerciales dedicadas al diseño de las ANN han desarrollado diferentes tarjetas basadas 
+en los diferentes procesadores existentes, diseñadas para trabajar en el entorno de un 
+ordenador personal PC y presentando un progresivo ratio de actualizaciones de 
+interconexiones por segundo. 
+ Chips de Silicio: Otro de los campos de la investigación en el mundo de las 
+ANN al margen de los simuladores software y aceleradores hardware, es la integración 
+de todos los componentes de computación neuronal en un chip de silicio. Un ejemplo 
+concreto es el chip Electronic Neural Network (EEN) de la compañía AT&T que 
+contiene 256 transistores-neuronas y más de 100.000 resistencias-sinapsis. Actualmente 
+este chip está siendo utilizado para aplicaciones de compresión del ancho de banda de 
+imágenes de vídeo para poder ser transmitidas por una línea telefónica. Existen muchas 
+compañías y centros de investigación que están trabajando en el desarrollo de circuitos 
+integrados que realizan computación neuronal. La mayoría de las aplicaciones de estos 
+chips está siendo la simulación de procesos sensitivos como la visión de imágenes y la 
+audición de sonidos
